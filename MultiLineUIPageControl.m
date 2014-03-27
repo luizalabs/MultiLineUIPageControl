@@ -8,15 +8,22 @@
 
 #import "MultiLineUIPageControl.h"
 
+#define DETAULT_DOTS_SPACE 9.0f
+
 @implementation MultiLineUIPageControl
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self)
     {
-        self.dotsSpace = 9.0f;
+        self.dotsSpace = DETAULT_DOTS_SPACE;
     }
     return self;
+}
+
+-(void) awakeFromNib {
+    [super awakeFromNib];
+    self.dotsSpace = DETAULT_DOTS_SPACE;
 }
 
 /*
