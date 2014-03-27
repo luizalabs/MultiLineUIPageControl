@@ -10,6 +10,11 @@
 
 @interface MultiLineUIPageControl : UIPageControl {}
 
-@property (nonatomic, assign) CGFloat dotsSpace; // default = 9.0f
+// default = 9.0f
+@property (nonatomic, assign)   CGFloat     dotsSpace;
+
+@property (nonatomic, readonly) NSInteger   numberOfLines;
+
+@property (nonatomic, readonly) CGFloat     heightThatFits; // best height?
 
 @end

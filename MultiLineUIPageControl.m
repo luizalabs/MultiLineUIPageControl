@@ -21,27 +21,39 @@
     return self;
 }
 
+
 -(void) awakeFromNib {
     [super awakeFromNib];
     self.dotsSpace = DETAULT_DOTS_SPACE;
 }
 
-/*
- do we need to relayot dots position?
- */
--(BOOL) needsRelayout {
-    return ([self sizeForNumberOfPages:self.numberOfPages].width > self.frame.size.width);
+
+-(NSArray *) dots {
+    return [self subviews];
+}
+
+
+-(NSInteger) numberOfLines {
+    return (NSInteger)ceil([self sizeForNumberOfPages:self.numberOfPages].width / self.frame.size.width);
+}
+
+
+-(CGFloat) heightThatFits {
+    UIView *lastDot = [[self dots] lastObject];
+    return ([self numberOfLines] * (lastDot.frame.size.height + self.dotsSpace));
 }
 
 
 -(void) layoutSubviews {
     [super layoutSubviews];
     
-    if ([self needsRelayout])
+    BOOL needsRelayout = ([self sizeForNumberOfPages:self.numberOfPages].width > self.frame.size.width);
+    if (needsRelayout)
     {
-        NSArray *dots = [self subviews];
-        CGFloat x = 0.0f, y = 0.0f;
+        CGFloat x = 0.0f;
+        CGFloat y = (self.frame.size.height / 2 - [self heightThatFits] / 2) + (self.dotsSpace / 2);
         
+        NSArray *dots = [self dots];
         for (UIView *dot in dots)
         {
             dot.frame = CGRectMake(x, y, dot.frame.size.width, dot.frame.size.height);

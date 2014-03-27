@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-    MultiLineUIPageControl *pc = [[MultiLineUIPageControl alloc] initWithFrame:CGRectMake(10.0f, 40.0f, 300.0f, 200.0f)];
+    MultiLineUIPageControl *pc = [[MultiLineUIPageControl alloc] initWithFrame:CGRectMake(10.0f, 40.0f, 300.0f, 130.0f)];
     pc.backgroundColor = [UIColor grayColor];
-    pc.numberOfPages = 300;
+    pc.numberOfPages = 120;
     [self.view addSubview:pc];
 }
 
