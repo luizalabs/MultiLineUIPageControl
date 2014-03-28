@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.summary  = 'UIPageControl with multiple lines.'
   s.homepage = 'http://luizalabs.com'
   s.author   = { 'Bruno Corrêa' => 'bruno@luizalabs.com' }
-  s.source   = { 'https://github.com/luizalabs/MultiLineUIPageControl.git', :tag => s.version.to_s }
+  s.source   = { :git => 'https://github.com/luizalabs/MultiLineUIPageControl.git', :tag => s.version.to_s }
   s.description = 'UIPageControl with multiple lines, dots vertical and horizontal spacement.'
-  s.source_files = '*.{h,m}'
+  s.source_files = 'Classes/*.{h,m}'
   s.requires_arc = true
 end

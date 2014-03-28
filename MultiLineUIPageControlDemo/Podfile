@@ -2,5 +2,6 @@
 # platform :ios, "7.0"
 
 target "MultiLineUIPageControlDemo" do
-    pod 'MultiLineUIPageControl', :git => 'git@github.com:luizalabs/MultiLineUIPageControl.git'
+    pod 'MultiLineUIPageControl', :local => "~/projects/MultiLineUIPageControl/"
+    #pod 'MultiLineUIPageControl', :git => 'git@github.com:luizalabs/MultiLineUIPageControl.git'
 end
