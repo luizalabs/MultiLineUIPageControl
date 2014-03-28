@@ -2,7 +2,7 @@
 *WorkspaceSettings.xcsettings
 *xcscheme
 *xccheckout
-Pods/
+#Pods/
 Podfile.lock
 *.DS_Store
 *xcuserdata*

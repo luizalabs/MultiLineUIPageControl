@@ -1,0 +1,14 @@
+PODS:
+  - MultiLineUIPageControl (0.1)
+
+DEPENDENCIES:
+  - MultiLineUIPageControl (from `../`)
+
+EXTERNAL SOURCES:
+  MultiLineUIPageControl:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MultiLineUIPageControl: 2c24ab908f4870f5695c1808bbbacac1f58ca819
+
+COCOAPODS: 0.29.0
