@@ -35,8 +35,8 @@
 
 -(CGSize) sizeForNumberOfPages:(NSInteger)numberOfPages {
     UIView *lastDot = [[self dots] lastObject];
-    return CGSizeMake((self.numberOfPages * (lastDot.frame.size.width + self.dotsHorizontalSpace)),
-                      (self.numberOfPages * (lastDot.frame.size.width + self.dotsVerticalSpace)));
+    return CGSizeMake((self.numberOfPages * (lastDot.frame.size.width + self.dotsHorizontalSpace) - self.dotsHorizontalSpace),
+                      (self.numberOfPages * (lastDot.frame.size.height + self.dotsVerticalSpace)));
 }
 
 
