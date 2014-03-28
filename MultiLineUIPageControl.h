@@ -8,13 +8,30 @@
 
 #import <UIKit/UIKit.h>
 
+#define DETAULT_DOTS_SPACE 9.0f
+
 @interface MultiLineUIPageControl : UIPageControl {}
 
-// default = 9.0f
-@property (nonatomic, assign)   CGFloat     dotsSpace;
+/*
+ the horizontal space between dots
+ default = DETAULT_DOTS_SPACE
+ */
+@property (nonatomic, assign)   CGFloat     dotsHorizontalSpace;
 
+/*
+ the vertical space between dots
+ default = DETAULT_DOTS_SPACE
+ */
+@property (nonatomic, assign)   CGFloat     dotsVerticalSpace;
+
+/*
+ return the number of of lines based dotsHorizontalSpace and dotsVerticalSpace
+ */
 @property (nonatomic, readonly) NSInteger   numberOfLines;
 
-@property (nonatomic, readonly) CGFloat     heightThatFits; // best height?
+/*
+ return the best height
+ */
+@property (nonatomic, readonly) CGFloat     heightThatFits;
 
 @end
