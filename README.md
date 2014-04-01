@@ -7,15 +7,13 @@ UIPageControl with multiple lines!
 
 ## Installation
 
-### CocoaPods
+* CocoaPods
 
 `pod 'MultiLineUIPageControl', :git => 'https://github.com/luizalabs/MultiLineUIPageControl.git', :tag => '0.1'` and "lepo lepo"
-don't get it? (https://www.youtube.com/watch?v=a7U0p2lcmMA)
 
-### Manually
+* Manually
 
 Drag the `MultiLineUIPageControl.h and MultiLineUIPageControl.m` into your project.  and "lepo lepo"
-don't get it? (https://www.youtube.com/watch?v=a7U0p2lcmMA)
 
 ### Aditional Features
 
@@ -23,3 +21,7 @@ don't get it? (https://www.youtube.com/watch?v=a7U0p2lcmMA)
 * dotsVerticalSpace `// the vertical space between dots`
 * numberOfLines `// (based in dotsHorizontalSpace and dotsVerticalSpace)`
 * heightThatFits `// the best height`
+ 
+### What is Lepo Lepo?
+
+`https://www.youtube.com/watch?v=a7U0p2lcmMA`
