@@ -3,4 +3,4 @@ MultiLineUIPageControl
 
 UIPageControl with multiple lines!
 
-![MultiLineUIPageControl](http://f.cl.ly/items/0c3U2f2l311i1v1g2q34/page_control.png)
+![MultiLineUIPageControl](http://f.cl.ly/items/2q1Y162B372B011F1O3S/page_control.gif)
