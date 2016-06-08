@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MultiLineUIPageControl'
-  s.version  = '0.1'
+  s.version  = '0.2'
   s.platform = :ios
   s.license  = 'MIT'
   s.summary  = 'UIPageControl with multiple lines.'
